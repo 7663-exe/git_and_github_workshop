@@ -45,10 +45,31 @@ x<!doctype html>
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <style>
-      /* Modern Scrollbar Styling for WebKit Engines (Chrome, Safari, Edge) */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
+        /* Modern Scrollbar Styling for WebKit Engines (Chrome, Safari, Edge) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #010409;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #95ff00;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #58a6ff;
+        }
+
+        /* Firefox Scrollbar Styling */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #30363d #010409;
+        }
+    </style>
+</head>
 
       ::-webkit-scrollbar-track {
         background: #010409;
